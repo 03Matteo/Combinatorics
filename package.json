@@ -1,0 +1,20 @@
+{
+  "name": "combinatorial-calculus",
+  "version": "1.1.0",
+  "description": "Gives back the result of the type of combinatorial calculus given.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/03Matteo/Combinatorial-Calculus.git"
+  },
+  "keywords": [],
+  "author": "03Matteo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/03Matteo/Combinatorial-Calculus/issues"
+  },
+  "homepage": "https://github.com/03Matteo/Combinatorial-Calculus#readme"
+}
