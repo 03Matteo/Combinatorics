@@ -22,7 +22,3 @@ const comb = new Combination(n, k).reps(<true|false>)
 
 const fact = getFactorial(number)
 ```
-
-# Keywords
-
-combinatorics disposition permutation combination
