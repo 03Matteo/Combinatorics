@@ -1,5 +1,5 @@
 {
-  "name": "combinatorics",
+  "name": "@03matteo/combinatorics",
   "version": "2.0.1",
   "description": "Gives back the result of the type of combinatorics given.",
   "main": "main.js",
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/03Matteo/Combinatorics.git"
   },
-  "keywords": [],
+  "keywords": [
+    "combinatorics",
+    "disposition",
+    "permutation",
+    "combination"
+  ],
   "author": "03Matteo",
   "license": "MIT",
   "bugs": {
