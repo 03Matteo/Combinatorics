@@ -1,20 +1,20 @@
 {
-  "name": "combinatorial-calculus",
+  "name": "combinatorics",
   "version": "2.0.1",
-  "description": "Gives back the result of the type of combinatorial calculus given.",
+  "description": "Gives back the result of the type of combinatorics given.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/03Matteo/Combinatorial-Calculus.git"
+    "url": "git+https://github.com/03Matteo/Combinatorics.git"
   },
   "keywords": [],
   "author": "03Matteo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/03Matteo/Combinatorial-Calculus/issues"
+    "url": "https://github.com/03Matteo/Combinatorics/issues"
   },
-  "homepage": "https://github.com/03Matteo/Combinatorial-Calculus#readme"
+  "homepage": "https://github.com/03Matteo/Combinatorics#readme"
 }

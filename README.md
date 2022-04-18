@@ -1,10 +1,10 @@
 # What is this?
 
-Gives back the result of the type of combinatorial calculus given.
+Gives back the result of the type of combinatorics given.
 
 # Installation
 
-`npm i combinatorial-calculus`
+`npm i combinatorics`
 
 Then...
 
@@ -14,7 +14,7 @@ const {
     Permutation,
     Combination,
     getFactorial
-} = require('combinatorial-calculus');
+} = require('combinatorics');
 
 const disp = new Disposition(n, k).reps(<true|false>)
 const perm = new Permutation(n, [h1, h2, h3, ...]).reps(<true|false>)
