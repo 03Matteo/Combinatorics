@@ -1,8 +1,8 @@
 {
   "name": "combinatorial-calculus",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Gives back the result of the type of combinatorial calculus given.",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

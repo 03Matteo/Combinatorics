@@ -9,10 +9,16 @@ Gives back the result of the type of combinatorial calculus given.
 Then...
 
 ```
+const {
+    Disposition,
+    Permutation,
+    Combination,
+    getFactorial
+} = require('combinatorial-calculus');
 
+const disp = new Disposition(n, k).reps(<true|false>)
+const perm = new Permutation(n, [h1, h2, h3, ...]).reps(<true|false>)
+const comb = new Combinaion(n, k).reps(<true|false>)
+
+const fact = getFactorial(number)
 ```
-
-## Options
-
-* 1
-* 2
