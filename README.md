@@ -23,6 +23,6 @@ const comb = new Combination(n, k).reps(<true|false>)
 const fact = getFactorial(number)
 ```
 
-#Keywords
+## Keywords
 
 combinatorics disposition permutation combination
