@@ -1,6 +1,6 @@
 {
   "name": "combinatorial-calculus",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Gives back the result of the type of combinatorial calculus given.",
   "main": "main.js",
   "scripts": {

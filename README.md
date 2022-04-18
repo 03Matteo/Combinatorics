@@ -18,7 +18,7 @@ const {
 
 const disp = new Disposition(n, k).reps(<true|false>)
 const perm = new Permutation(n, [h1, h2, h3, ...]).reps(<true|false>)
-const comb = new Combinaion(n, k).reps(<true|false>)
+const comb = new Combination(n, k).reps(<true|false>)
 
 const fact = getFactorial(number)
 ```
