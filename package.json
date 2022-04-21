@@ -1,7 +1,7 @@
 {
   "name": "@03matteo/combinatorics",
-  "version": "2.0.3",
-  "description": "Gives back the result of the type of combinatorics given.",
+  "version": "2.0.4",
+  "description": "Gives back the result of the type of combinatoric given.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,8 @@
     "combinatorics",
     "disposition",
     "permutation",
-    "combination"
+    "combination",
+    "factorial"
   ],
   "author": "03Matteo",
   "license": "MIT",

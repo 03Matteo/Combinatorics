@@ -4,7 +4,7 @@ Gives back the result of the type of combinatorics given.
 
 # Installation
 
-`npm i combinatorics`
+`npm i @03matteo/combinatorics`
 
 Then...
 
