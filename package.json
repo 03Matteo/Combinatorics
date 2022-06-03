@@ -1,6 +1,6 @@
 {
   "name": "@03matteo/combinatorics",
-  "version": "2.0.1",
+  "version": "2.0.6",
   "main": "main.ts",
   "description": "Gives back the result of the combinatoric given.",
   "repository": {
