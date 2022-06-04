@@ -1,37 +1,43 @@
-const { getFactorial } = require("../main");
+const getFactorial = require('../main');
 
 module.exports = class Combination {
+	/**
+	 * @param {number} n - a
+	 * @param {number} k - b 
+	 */
+	constructor(n, k) {
+		this.n = n;
+		this.k = k;
+	}
+	/**
+	 * @method reps()
+	 * @param {boolean} repetitions - By default are true
+	 */
+	reps(repetitions) {
+		if (typeof repetitions !== 'boolean' && repetitions !== undefined)
+			throw new Error(`Cannot read the property of reps() as '${typeof repetitions}', provide a boolean.`);
 
-    constructor(n, k) {
-        this.n = n;
-        this.k = k;
-    }
+		if (repetitions === undefined) repetitions = true;
 
-    reps(reps) {
-        if (typeof reps !== 'boolean' && reps !== undefined)
-            throw new Error(`Cannot read the property of reps() as '${typeof reps}', provide a boolean.`);
+		let n = this.n;
+		const k = this.k;
 
-        if (reps === undefined) reps = true;
+		let result = 1;
 
-        let n = this.n;
-        const k = this.k;
+		if (repetitions) {
+			n += k - 1;
 
-        let result = 1;
+			const numerator = getFactorial(n);
+			const denominator = getFactorial(k) * getFactorial(n - k);
 
-        if (reps) {
-            n += k - 1;
+			result *= (numerator / denominator).toFixed();
+		} else {
+			const numerator = getFactorial(n);
+			const denominator = getFactorial(k) * getFactorial(n - k);
 
-            const numerator = getFactorial(n);
-            const denominator = getFactorial(k) * getFactorial(n - k);
+			result *= (numerator / denominator).toFixed();
+		}
 
-            result *= parseInt((numerator / denominator).toFixed());
-        } else {
-            const numerator = getFactorial(n);
-            const denominator = getFactorial(k) * getFactorial(n - k);
-
-            result *= parseInt((numerator / denominator).toFixed());
-        }
-
-        return result;
-    }
-}
+		return result;
+	}
+};

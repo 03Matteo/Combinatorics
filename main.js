@@ -1,9 +1,8 @@
-const Disposition = require('./types/combination'),
-	Combination = require('./types/combination'),
-	Permutation = require('./types/permutation');
+const Disposition = require('./types/disposition');
+const Permutation = require('./types/permutation');
+const Combination = require('./types/combination');
 
 const getFactorial = (n) => {
-
 	let nPassed = 0;
 	let nLeft = n;
 
@@ -25,7 +24,7 @@ const getFactorial = (n) => {
 
 module.exports = {
 	Disposition,
-	Combination,
 	Permutation,
+	Combination,
 	getFactorial
-}
+};

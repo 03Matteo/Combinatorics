@@ -1,24 +1,19 @@
 const getFactorial = require('../main');
 
-module.exports = class Permutation {
+module.exports = class Disposition {
 	/**
 	 * @param {number} n - a
-     * @param {[nubers]} r - b
+	 * @param {number} k - b 
 	 */
-	constructor(n, r) {
+	constructor(n, k) {
 		this.n = n;
-		this.r = r;
-
-		if (!r.length && typeof r !== 'number') {
-			throw new TypeError('The second parameter must be a number or an array of numbers.');
-		}
-
-		this.r = [ r ];
+		this.k = k;
 	}
 	/**
 	 * @method reps()
 	 * @param {boolean} repetitions - By default are true
 	 */
+
 	reps(repetitions) {
 		if (typeof repetitions !== 'boolean' && repetitions !== undefined)
 			throw new Error(`Cannot read the property of reps() as '${typeof repetitions}', provide a boolean.`);
@@ -26,21 +21,28 @@ module.exports = class Permutation {
 		if (repetitions === undefined) repetitions = true;
 
 		const n = this.n;
-		const r = this.r;
+		const k = this.k;
+
+		if (n < k) throw new Error('The first parameter must be greater than the second.');
 
 		let result = 1;
 
 		if (repetitions) {
-			let numerator = getFactorial(n);
-			let denominator = 1;
-
-			for (const rep of r) {
-				denominator *= getFactorial(rep);
-			}
-
-			result = numerator / denominator;
+			result *= Math.pow(n, k);
 		} else {
-			result = getFactorial(n);
+			let kPassed = 0;
+			let nLeft = n;
+
+			for (let i = 0; i < Math.ceil(k / 2); i++) {
+				if (kPassed === k - 1) {
+					result *= nLeft;
+				} else if (kPassed !== k) {
+					result *= nLeft * (nLeft - 1);
+
+					nLeft -= 2;
+					kPassed += 2;
+				}
+			}
 		}
 
 		return result;
