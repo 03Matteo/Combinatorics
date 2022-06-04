@@ -1,7 +1,7 @@
 {
   "name": "@03matteo/combinatorics",
   "version": "2.0.6",
-  "main": "main.ts",
+  "main": "main.js",
   "description": "Gives back the result of the combinatoric given.",
   "repository": {
     "type": "git",
@@ -19,10 +19,5 @@
   "bugs": {
     "url": "https://github.com/03Matteo/Combinatorics/issues"
   },
-  "homepage": "https://github.com/03Matteo/Combinatorics#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^17.0.39",
-    "ts-node": "^10.8.0"
-  }
+  "homepage": "https://github.com/03Matteo/Combinatorics#readme"
 }
