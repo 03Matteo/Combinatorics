@@ -1,23 +1,21 @@
-const getFactorial = require('../main');
+const getFactorial = require('../utils/getFactorial');
 
 module.exports = class Permutation {
 	/**
-	 * @param {number} n - a
-     * @param {[nubers]} r - b
+	 * @param {number} n
+	 * @param {[nubers]} r
 	 */
 	constructor(n, r) {
 		this.n = n;
 		this.r = r;
 
-		if (!r.length && typeof r !== 'number') {
-			throw new TypeError('The second parameter must be a number or an array of numbers.');
+		if (typeof this.r === 'number') {
+			this.r = [this.r];
 		}
-
-		this.r = [ r ];
 	}
 	/**
 	 * @method reps()
-	 * @param {boolean} repetitions - By default are true
+	 * @param {boolean} repetitions - By default is true
 	 */
 	reps(repetitions) {
 		if (typeof repetitions !== 'boolean' && repetitions !== undefined)
@@ -27,6 +25,10 @@ module.exports = class Permutation {
 
 		const n = this.n;
 		const r = this.r;
+
+		if (repetitions === true && (r === undefined || r.length === undefined)) {
+			throw new TypeError('The second parameter must be a number or an array of numbers.');
+		}
 
 		let result = 1;
 

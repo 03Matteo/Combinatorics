@@ -1,9 +1,7 @@
-const getFactorial = require('../main');
-
 module.exports = class Disposition {
 	/**
-	 * @param {number} n - a
-	 * @param {number} k - b 
+	 * @param {number} n
+	 * @param {number} k
 	 */
 	constructor(n, k) {
 		this.n = n;
@@ -11,7 +9,7 @@ module.exports = class Disposition {
 	}
 	/**
 	 * @method reps()
-	 * @param {boolean} repetitions - By default are true
+	 * @param {boolean} repetitions - By default is true
 	 */
 
 	reps(repetitions) {

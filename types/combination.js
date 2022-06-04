@@ -1,9 +1,9 @@
-const getFactorial = require('../main');
+const getFactorial = require('../utils/getFactorial');
 
 module.exports = class Combination {
 	/**
-	 * @param {number} n - a
-	 * @param {number} k - b 
+	 * @param {number} n
+	 * @param {number} k
 	 */
 	constructor(n, k) {
 		this.n = n;
@@ -11,7 +11,7 @@ module.exports = class Combination {
 	}
 	/**
 	 * @method reps()
-	 * @param {boolean} repetitions - By default are true
+	 * @param {boolean} repetitions - By default is true
 	 */
 	reps(repetitions) {
 		if (typeof repetitions !== 'boolean' && repetitions !== undefined)
